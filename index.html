@@ -8,11 +8,40 @@
             content="width=device-width, initial-scale=1.0"
         />
         <link rel="stylesheet" href="index.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <title>unit converter</title>
     </head>
     <body>
         <header><h1>Unit Converter</h1></header>
-        <div class="container"></div>
+        <main class="container">
+            <div class="user-input">
+                <label for="unit"
+                    >Metric/Imperial unit conversion</label
+                >
+                <input id="unit" type="text" autofocus />
+            </div>
+            <div class="results">
+                <div>
+                    <h3>Length (meter/feet)</h3>
+                    <p id="length" class="conversion">conversion</p>
+                </div>
+                <div>
+                    <h3>Volume (liter/gallon)</h3>
+                    <p id="volume" class="conversion">conversion</p>
+                </div>
+                <div>
+                    <h3>Mass (kilogram/pound)</h3>
+                    <p id="mass" class="conversion">conversion</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p><strong>Create by Randy Woster</strong></p>
+            <p>Scrimba Solo Project #1</p>
+        </footer>
         <script src="index.js"></script>
     </body>
 </html>
